@@ -1,0 +1,51 @@
+<!DOCTYPE html>
+<html lang="en">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>TARJETA</title>
+    <link rel="stylesheet" href="tarjeta.css">
+</head>
+<body>
+
+    <main>
+        <header class="container">
+            <section class="card">
+                <div class="card-bg">
+                    <img src="/img/arbol.jpg" alt="">
+                </div>
+                <div class="title">
+                    <h2>FELIZ</h2>
+                    <h1>NAVIDAD</h1>
+                    <h3>& HAPPY NEW YEAR</h3>
+                </div>
+    
+            </section>
+        </header>
+    
+        <script>
+        </script>
+    </main>
+
+    <script type="text/javascript">
+    const container= document.querySelector(".container");
+    const card= document.querySelector(".card");
+
+    container.addEventListener('mousemove', (rotate)=>{
+
+    let x = (innerWidth / 2 - rotate.pagex) / 15;
+    let y = (innerHeight / 2 - rotate.pagey) / 15;
+    card.style.transform = "rotateY(" + x + "deg) rotateX(" + y + "deg)";
+
+    container.addEventListener("mouseover", ()=> {
+    title.style.transform = "translate3D(0.0, 160px)";
+    })
+    });
+
+    </script>
+
+    <script src="tarjeta.js"></script>
+
+
+</body>
+</html>
